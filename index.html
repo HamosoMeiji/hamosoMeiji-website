@@ -352,10 +352,14 @@
   display: flex;
   width: max-content;
   gap: 34px;
-  animation: ticker 180s linear infinite;
+  animation: ticker 10s linear infinite;
   will-change: transform;
+  padding-left: 0;
 }
 
+.ticker-track span {
+  flex-shrink: 0;
+}
 .ticker-track span {
   font-size: 12px;
   font-weight: 800;
