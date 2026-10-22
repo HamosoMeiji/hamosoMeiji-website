@@ -363,9 +363,13 @@
 
     .ticker-track b { color: #8b9f40; }
 
-    @keyframes ticker {
-      to { transform: translateX(-50%); }
-    }
+    .ticker-track {
+  animation-duration: 90s;
+}
+
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
 
     /* ABOUT */
     .about-grid {
