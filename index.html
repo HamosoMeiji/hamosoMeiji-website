@@ -341,24 +341,27 @@
     .button.light:hover { background: var(--green); }
 
     
+
 /* TICKER */
 .ticker {
   overflow: hidden;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   padding: 16px 0;
+  width: 100%;
 }
 
 .ticker-track {
   display: flex;
   width: max-content;
-  animation: ticker 60s linear infinite;
+  animation: ticker 35s linear infinite;
   will-change: transform;
 }
 
 .ticker-group {
   display: flex;
-  flex-shrink: 0;
+  flex: 0 0 auto;
+  align-items: center;
   gap: 34px;
   padding-right: 34px;
 }
@@ -375,15 +378,15 @@
   color: #8b9f40;
 }
 
-.ticker:hover .ticker-track {
-  animation-play-state: paused;
-}
-
 @keyframes ticker {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
+
     /* ABOUT */
     .about-grid {
       display: grid;
