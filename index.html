@@ -352,23 +352,26 @@
 .ticker-track {
   display: flex;
   width: max-content;
-  gap: 34px;
   animation: ticker 60s linear infinite;
   will-change: transform;
-  padding-left: 0;
 }
 
-.ticker-track span {
+.ticker-group {
+  display: flex;
   flex-shrink: 0;
+  gap: 34px;
+  padding-right: 34px;
 }
-.ticker-track span {
+
+.ticker-group span {
+  flex-shrink: 0;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: .12em;
   white-space: nowrap;
 }
 
-.ticker-track b {
+.ticker-group b {
   color: #8b9f40;
 }
 
@@ -381,7 +384,6 @@
     transform: translateX(-50%);
   }
 }
-
     /* ABOUT */
     .about-grid {
       display: grid;
@@ -1088,36 +1090,26 @@
     </section>
 
     <div class="ticker" aria-label="ハモソの活動">
-      <div class="ticker-track">
-        
-<div class="ticker-track">
-  <span>MUSIC FOR EVERYONE <b>✳</b></span>
-  <span>HARMONICA SOCIETY <b>✳</b></span>
-  <span>PLAY TOGETHER <b>✳</b></span>
-  <span>MEIJI UNIVERSITY <b>✳</b></span>
-  <span>MAKE SOME NOISE <b>✳</b></span>
-  <span>FIND YOUR SOUND <b>✳</b></span>
-  <span>MUSIC FOR EVERYONE <b>✳</b></span>
-  <span>HARMONICA SOCIETY <b>✳</b></span>
-  <span>PLAY TOGETHER <b>✳</b></span>
-  <span>MEIJI UNIVERSITY <b>✳</b></span>
-  <span>MAKE SOME NOISE <b>✳</b></span>
-  <span>FIND YOUR SOUND <b>✳</b></span>
-  <span>MUSIC FOR EVERYONE <b>✳</b></span>
-  <span>HARMONICA SOCIETY <b>✳</b></span>
-  <span>PLAY TOGETHER <b>✳</b></span>
-  <span>MEIJI UNIVERSITY <b>✳</b></span>
-  <span>MAKE SOME NOISE <b>✳</b></span>
-  <span>FIND YOUR SOUND <b>✳</b></span>
-  <span>MUSIC FOR EVERYONE <b>✳</b></span>
-  <span>HARMONICA SOCIETY <b>✳</b></span>
-  <span>PLAY TOGETHER <b>✳</b></span>
-  <span>MEIJI UNIVERSITY <b>✳</b></span>
-  <span>MAKE SOME NOISE <b>✳</b></span>
-  <span>FIND YOUR SOUND <b>✳</b></span>
-</div>
+      <div class="ticker">
+  <div class="ticker-track">
+    <div class="ticker-group">
+      <span>MUSIC FOR EVERYONE <b>✳</b></span>
+      <span>HARMONICA SOCIETY <b>✳</b></span>
+      <span>PLAY TOGETHER <b>✳</b></span>
+      <span>MEIJI UNIVERSITY <b>✳</b></span>
+      <span>MAKE SOME NOISE <b>✳</b></span>
+      <span>FIND YOUR SOUND <b>✳</b></span>
     </div>
-
+    <div class="ticker-group" aria-hidden="true">
+      <span>MUSIC FOR EVERYONE <b>✳</b></span>
+      <span>HARMONICA SOCIETY <b>✳</b></span>
+      <span>PLAY TOGETHER <b>✳</b></span>
+      <span>MEIJI UNIVERSITY <b>✳</b></span>
+      <span>MAKE SOME NOISE <b>✳</b></span>
+      <span>FIND YOUR SOUND <b>✳</b></span>
+    </div>
+  </div>
+</div>
     <section class="section wrap" id="about">
       <div class="about-grid">
         <div class="about-copy reveal">
