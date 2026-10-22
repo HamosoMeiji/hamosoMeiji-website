@@ -67,12 +67,18 @@
     .nav-links a:hover { color: var(--orange); }
 
     .hero {
-      background: var(--green);
-      color: white;
-      padding: 85px 0 105px;
-      overflow: hidden;
-      position: relative;
-    }
+  background:
+    linear-gradient(
+      90deg,
+      rgba(16, 42, 38, 0.92),
+      rgba(16, 42, 38, 0.35)
+    ),
+    url("images/hero.jpg") center / cover no-repeat;
+  color: white;
+  padding: 85px 0 105px;
+  overflow: hidden;
+  position: relative;
+}
 
     .hero::after {
       content: "♪";
@@ -234,7 +240,9 @@
 <body>
   <header>
     <nav class="wrap" aria-label="メインナビゲーション">
-      <a class="logo" href="#">HAMOSO.</a>
+     <a class="logo" href="#" aria-label="ハモソ トップページ">
+  <img src="images/logo.png" alt="ハモソ">
+</a>
       <div class="nav-links">
         <a href="#about">ABOUT</a>
         <a href="#activity">ACTIVITY</a>
