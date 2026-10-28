@@ -122,6 +122,32 @@
       border-color: var(--green);
       transform: rotate(45deg);
     }
+    /* 活動カードのボタン風リンク */
+.activity-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 24px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.activity-more span {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transition: .25s ease;
+}
+
+.activity-card:hover .activity-more span {
+  background: var(--green);
+  border-color: var(--green);
+  transform: rotate(45deg);
+}
 
     /* HEADER */
     .header {
